@@ -1,0 +1,51 @@
+.navbar-custom{
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+
+}
+/* Base style */
+/* .navbar-custom {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+} */
+
+.navbar-custom .navbar-brand {
+  color:white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #00c6ff ;
+}
+
+/* 🔹 Mobile & tablet styles */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-collapse {
+    /* background: rgba(15, 32, 39, 0.97); slightly transparent background */
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .navbar-custom .nav-link {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    display: block;
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
