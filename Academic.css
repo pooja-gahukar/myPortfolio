@@ -1,0 +1,117 @@
+
+
+.academic-section {
+  background: linear-gradient(to right, #f8f9fa, #acd2f0);
+ 
+
+  padding: 0px 20px;
+  padding-top: 50px;
+  color:black;
+
+  min-height: 100vh;
+  text-align: center;
+  
+
+}
+hr{
+  font-weight: 2px;
+}
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color:black;
+
+  font-weight: bold;
+  /* animation: fadeInDown 1s ease; */
+}
+
+/* Responsive grid layout for academic cards */
+.card-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 10px;
+}
+
+/* Card style */
+.academic-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 20px;
+  border-radius: 12px;
+  border: 1px solid black;
+  box-shadow: 0 8px 40px rgba(8, 8, 8, 0.1);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.academic-card:hover {
+ transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+ 
+}
+
+/* Card text */
+.academic-card h4 {
+  font-size: 1.2rem;
+  color: #064d61;
+  margin-bottom: 10px;
+}
+
+.academic-card .year {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 6px;
+}
+
+.academic-card .institute,
+.academic-card .highlight {
+  font-size: 0.95rem;
+  color:black;
+  margin-bottom: 4px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔸 Media Queries for extra control */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .academic-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .academic-card {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .card-track {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-card {
+    padding: 18px 14px;
+  }
+
+  .academic-card .highlight {
+    font-size: 0.9rem;
+  }
+}
